@@ -1,6 +1,6 @@
 let player = {
     name: "Itoro",
-    chips: 200
+    chips: 500
 }
 let cards = []
 let sum = 0
@@ -60,6 +60,12 @@ function newCard() {
         cards.push(card)
         renderGame()
     }   
+}
+
+function resetGame() {
+    messageEl.textContent = "Want to play a round"
+    cardsEl.textContent = "Cards: "
+    sumEl.textContent = "Sum: "
 }
 
 
